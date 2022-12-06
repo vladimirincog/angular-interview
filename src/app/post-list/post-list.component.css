@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  height: 200px;
+  overflow: auto; 
+}
+
+:host .selected {  
+  background-color: lightblue;
+}

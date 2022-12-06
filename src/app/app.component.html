@@ -1,0 +1,12 @@
+<p>Posts</p>
+
+<post-list [posts]="posts" (postClick)="postClick()"></post-list>
+
+<p>Comments ({{ selectedComents ? selectedComents.length : 0 }})</p>
+<comment-list
+  *ngIf="selectedComents && selectedComments.length > 0"
+></comment-list>
+
+<label *ngIf="!selectedComents || selectedComents.length === 0"
+  >Select post to view comments</label
+>

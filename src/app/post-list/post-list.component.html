@@ -1,0 +1,6 @@
+<ul>
+  <li 
+   *ngFor="let post of posts"
+   [ngClass]="selectedPost?.id === post.id ? 'selected': undfined"
+    (click)="postClickLocal($event, post)">{{post.message}}</li>
+<ul>
